@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Oswald', 'Montserrat', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom patterned backgrounds inspired by the flyer's subtle luxury texture */
+.bg-navy-pattern {
+  background-color: #05052F;
+  background-image: radial-gradient(circle at 80% 20%, rgba(255, 183, 25, 0.08) 0%, transparent 40%),
+                    radial-gradient(circle at 10% 80%, rgba(217, 0, 0, 0.06) 0%, transparent 45%),
+                    linear-gradient(135deg, #05052F 0%, #08093C 50%, #03031F 100%);
+}
+
+.bg-torn-paper-edge {
+  position: relative;
+}
+
+.bg-torn-paper-edge::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background-repeat: repeat-x;
+  background-size: 40px 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32' preserveAspectRatio='none'%3E%3Cpath d='M0,32 L0,12 Q10,0 20,12 T40,12 L40,32 Z' fill='%23F8FAFC'/%3E%3C/svg%3E");
+  z-index: 10;
+}
+
+/* Golden glow text */
+.text-gold-shadow {
+  text-shadow: 0 2px 10px rgba(255, 183, 25, 0.3);
+}
+
+/* Subtle smooth button bounce */
+.btn-gold {
+  background-color: #FFB719;
+  color: #05052F;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px 0 rgba(255, 183, 25, 0.39);
+}
+
+.btn-gold:hover {
+  background-color: #FFC638;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 183, 25, 0.55);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px 0 rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp:hover {
+  background-color: #20BD5A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5);
+}
+
