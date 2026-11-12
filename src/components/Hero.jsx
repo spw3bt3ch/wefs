@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, MessageCircle, Calendar, ShieldCheck, CheckCircle2, Sparkles, MapPin, Heart } from 'lucide-react';
+import { ExternalLink, MessageCircle, Calendar, ShieldCheck, CheckCircle2, Sparkles, MapPin } from 'lucide-react';
 import { PROGRAM_DATA } from '../constants';
 
 export default function Hero() {
@@ -128,8 +128,8 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Original Woman's Photograph Preserved from Flyer */}
-          <div className="lg:col-span-5 relative flex items-center justify-center mt-4 lg:mt-0">
+          {/* Right Column: Programme Banner Hero Graphic */}
+          <div className="lg:col-span-5 relative flex items-center justify-center mt-6 lg:mt-0">
             
             {/* Ambient Gold Glow & Graphic Accent Rings */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -138,52 +138,17 @@ export default function Hero() {
             </div>
 
             {/* Featured Image Card with Frame */}
-            <div className="relative w-full max-w-md mx-auto">
-              {/* Backdrop Gradient Plate */}
-              <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-caf-navy-light via-caf-navy-surface to-caf-navy-dark border border-caf-gold/30 shadow-2xl p-4 sm:p-6 pb-0 sm:pb-0">
-                
-                {/* Decorative Flyer Badge */}
-                <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-caf-navy/85 backdrop-blur-md border border-caf-gold/50 text-white text-[11px] font-semibold shadow-md">
-                  <Heart className="w-3.5 h-3.5 text-caf-red fill-caf-red" />
-                  <span>Dignity • Hope • Support</span>
-                </div>
-
-                {/* Woman's Photograph - Original Identity Preserved */}
-                <div className="relative z-10 flex justify-center items-end">
-                  <img
-                    src="/woman-opt.png"
-                    srcSet="/woman-opt.png 600w, /woman.png 1209w"
-                    sizes="(max-width: 640px) 340px, 400px"
-                    alt="Dignified Nigerian widow beneficiary wearing traditional black lace gele and bead necklace"
-                    className="w-full max-w-[340px] sm:max-w-[380px] object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.6)] transform hover:scale-[1.02] transition-transform duration-300"
-                    loading="eager"
-                    width="600"
-                    height="646"
-                  />
-                </div>
-
-                {/* Floating Date Strip Banner on the image */}
-                <div className="absolute bottom-4 left-4 right-4 z-20 bg-caf-navy/95 backdrop-blur-md border border-caf-gold/40 rounded-xl p-3 shadow-xl flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-lg bg-caf-gold flex items-center justify-center text-caf-navy font-black text-xs">
-                      NOV
-                    </div>
-                    <div>
-                      <p className="text-[11px] font-medium text-slate-300 uppercase tracking-wider">Application Dates</p>
-                      <p className="text-xs sm:text-sm font-bold text-caf-gold">12th – 30th Nov 2026</p>
-                    </div>
-                  </div>
-
-                  <a
-                    href={PROGRAM_DATA.googleFormUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 rounded-lg bg-caf-gold hover:bg-caf-gold-light text-caf-navy text-xs font-bold uppercase transition-colors flex items-center gap-1"
-                  >
-                    <span>Apply</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
+            <div className="relative w-full max-w-lg mx-auto">
+              {/* Backdrop Gradient Plate & Frame */}
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-b from-caf-navy-light via-caf-navy-surface to-caf-navy-dark border-2 border-caf-gold/40 shadow-2xl p-1.5 sm:p-2 group">
+                <img
+                  src="/hero.png"
+                  alt="Charity Ayo Foundation - Widows' Empowerment & Family Support Programme"
+                  className="w-full h-auto object-cover rounded-xl shadow-lg transform group-hover:scale-[1.01] transition-transform duration-300"
+                  loading="eager"
+                  width="1556"
+                  height="941"
+                />
               </div>
             </div>
 
