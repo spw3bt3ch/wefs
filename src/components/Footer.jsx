@@ -120,7 +120,7 @@ export default function Footer() {
           </p>
 
           <p className="flex items-center gap-1.5">
-            <span><a href="https://www.g5ma.com/">Developed by G5 Multimedia Agency Limited</a></span>
+            <span>Developed by: <a href="https://www.g5ma.com/">G5 Multimedia Agency Limited</a></span>
             <Heart className="w-3.5 h-3.5 text-caf-red fill-caf-red" />
           </p>
         </div>
