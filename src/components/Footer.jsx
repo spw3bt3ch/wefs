@@ -16,13 +16,13 @@ export default function Footer() {
   return (
     <footer className="bg-caf-navy-dark text-slate-300 pt-16 pb-12 border-t-2 border-caf-gold/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-          
+
           {/* Foundation Profile */}
           <div className="lg:col-span-5 space-y-4">
             <Logo light={true} />
-            
+
             <p className="text-sm text-slate-300 max-w-sm leading-relaxed pt-2">
               <span className="font-semibold text-caf-gold">{PROGRAM_DATA.foundationTagline}</span>
               <br />
@@ -73,7 +73,7 @@ export default function Footer() {
             <h3 className="font-heading uppercase text-sm font-bold tracking-wider text-white mb-4">
               Contact & Enquiries
             </h3>
-            
+
             <div className="space-y-3 text-sm">
               <a
                 href={`tel:${PROGRAM_DATA.phone}`}
@@ -120,7 +120,7 @@ export default function Footer() {
           </p>
 
           <p className="flex items-center gap-1.5">
-            <span>Powered by compassion &amp; community support</span>
+            <span><a href="https://www.g5ma.com/">Developed by G5 Multimedia Agency Limited</a></span>
             <Heart className="w-3.5 h-3.5 text-caf-red fill-caf-red" />
           </p>
         </div>
